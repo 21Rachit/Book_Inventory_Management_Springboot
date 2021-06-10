@@ -1,6 +1,7 @@
 # Book_Inventory_Management_Springboot
 
 Assumption
+
 One assumption that I made is store in the problem statement refers to the store location. 
 For example if the question is list all stores for the user?? 
 I have assumed it means that list all the locations where that book store is present under that user. 
