@@ -104,11 +104,15 @@ Response Body
 
 
 Update inventory for an existing book.
+
 @RequestMapping(value = "/update", method = RequestMethod.GET)
+
 http://localhost:9095/update?user_name=Rachit&store=Lucknow&book_name=Mno&count=40
 
 Remove from the inventory.
+
 @RequestMapping(value = "/delete", method = RequestMethod.GET)
+
 http://localhost:9095/delete?user_name=Rachit&store=Lucknow&book_name=Xyz
 
 
