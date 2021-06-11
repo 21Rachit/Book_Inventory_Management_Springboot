@@ -10,7 +10,7 @@ For example if a user is in charge of Uttar Pradesh district , then stores under
 
 POSTMAN REQUESTS
 
-List of all stores for the user
+1- List of all stores for the user
 
 @RequestMapping(value = "/{user}", method = RequestMethod.GET) (request mapping)
 
@@ -25,7 +25,8 @@ Response Body
 ]
 
 
-List out all the books in inventory inside the store.
+
+2- List out all the books in inventory inside the store.
 
 @RequestMapping(value = "/{user}/{store}", method = RequestMethod.GET)
 
@@ -50,7 +51,8 @@ Response Body
 ]
 
 
-Make changes to inventory:
+
+3- Make changes to inventory:
 
 @RequestMapping(value = "/details/{id}", method = RequestMethod.PUT)
 
@@ -76,7 +78,9 @@ Response Body
     "store_name": "Lucknow"
 }
 
-Add a new book.
+
+
+4- Add a new book.
 
 @RequestMapping(value = "/details/", method = RequestMethod.POST)
 
@@ -103,13 +107,16 @@ Response Body
 }
 
 
-Update inventory for an existing book.
+
+5- Update inventory for an existing book.
 
 @RequestMapping(value = "/update", method = RequestMethod.GET)
 
 http://localhost:9095/update?user_name=Rachit&store=Lucknow&book_name=Mno&count=40
 
-Remove from the inventory.
+
+
+6- Remove from the inventory.
 
 @RequestMapping(value = "/delete", method = RequestMethod.GET)
 
